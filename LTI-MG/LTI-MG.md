@@ -275,14 +275,14 @@ erDiagram
 
 ```mermaid
 graph TD
-    A[Problem<br>- Slow hiring processes<br>- Poor collaboration<br>- Manual repetitive tasks] --> B[Solution<br>- AI-driven ATS<br>- Real-time collaboration<br>- Automation of tasks]
-    A --> C[Customer Segments<br>- SMEs<br>- Enterprises<br>- Staffing agencies]
-    B --> D[Unique Value Proposition<br>Streamlined, AI-powered hiring with seamless collaboration]
-    B --> E[Key Metrics<br>- Time-to-hire<br>- Candidate satisfaction<br>- Hiring cost reduction]
-    C --> F[Channels<br>- Website<br>- Demos<br>- Industry events]
-    D --> G[Revenue Streams<br>- Subscription (SaaS)<br>- Enterprise licensing]
-    C --> H[Cost Structure<br>- Development<br>- Cloud hosting<br>- Support]
-    D --> I[Unfair Advantage<br>- AI and CRM integration<br>- Scalable cloud architecture]
+    A[Problem<br/>- Slow hiring processes<br/>- Poor collaboration<br/>- Manual repetitive tasks] --> B[Solution<br/>- AI-driven ATS<br/>- Real-time collaboration<br/>- Automation of tasks]
+    A --> C[Customer Segments<br/>- SMEs<br/>- Enterprises<br/>- Staffing agencies]
+    B --> D[Unique Value Proposition<br/>Streamlined, AI-powered hiring with seamless collaboration]
+    B --> E[Key Metrics<br/>- Time-to-hire<br/>- Candidate satisfaction<br/>- Hiring cost reduction]
+    C --> F[Channels<br/>- Website<br/>- Demos<br/>- Industry events]
+    D --> G[Revenue Streams<br/>- Subscription SaaS<br/>- Enterprise licensing]
+    C --> H[Cost Structure<br/>- Development<br/>- Cloud hosting<br/>- Support]
+    D --> I[Unfair Advantage<br/>- AI and CRM integration<br/>- Scalable cloud architecture]
 ```
 
 ### Lean Canvas Explanation
@@ -427,21 +427,21 @@ LTI-ATS is a cloud-based, microservices architecture deployed on AWS, ensuring s
 
 ```mermaid
 graph TD
-    A[User (Recruiter/Candidate)] -->|HTTPS| B[CloudFront CDN]
+    A[User Recruiter-Candidate] -->|HTTPS| B[CloudFront CDN]
     B -->|Static Assets| C[S3 Bucket]
     A -->|HTTPS| D[Elastic Load Balancer]
-    D --> E[Frontend Service (React)]
+    D --> E[Frontend Service React]
     D --> F[API Gateway]
-    F --> G[Backend Service (Node.js)]
-    F --> H[AI Service (Python)]
+    F --> G[Backend Service Node.js]
+    F --> H[AI Service Python]
     G --> I[PostgreSQL Database]
     G --> J[MongoDB]
     G --> K[Redis Cache]
     G --> L[RabbitMQ Queue]
-    H --> M[TensorFlow/NLP Models]
-    G --> N[External Systems (Job Boards, HRIS)]
+    H --> M[TensorFlow-NLP Models]
+    G --> N[External Systems Job Boards-HRIS]
     L --> O[Email Service]
-    F --> P[Authentication Service (OAuth2)]
+    F --> P[Authentication Service OAuth2]
 ```
 
 ### Scalability and Security
@@ -473,11 +473,11 @@ graph TD
 ```mermaid
 graph TD
     A[LTI-ATS System] --> B[AI Engine Container]
-    B --> C[Resume Parser (Python, Spacy)]
-    B --> D[Candidate Matcher (TensorFlow)]
-    B --> E[Analytics Generator (Python)]
-    C --> F[MongoDB (Resume Data)]
-    D --> G[PostgreSQL (Job/Candidate Data)]
+    B --> C[Resume Parser Python-Spacy]
+    B --> D[Candidate Matcher TensorFlow]
+    B --> E[Analytics Generator Python]
+    C --> F[MongoDB Resume Data]
+    D --> G[PostgreSQL Job-Candidate Data]
     E --> G
     B -->|REST API| H[Backend Service]
 ```
@@ -492,7 +492,7 @@ graph TD
     A --> D[Analytics Generator]
     B --> E[Spacy NLP Model]
     B --> F[Resume Data Processor]
-    C --> G[ML Model (TensorFlow)]
+    C --> G[ML Model TensorFlow]
     C --> H[Scoring Algorithm]
     D --> I[Analytics Engine]
     D --> J[Report Generator]
